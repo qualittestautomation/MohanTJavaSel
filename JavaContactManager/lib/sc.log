@@ -540,3 +540,132 @@
 20150511 133031.300 [07180] Connection established.
 20150511 133038.614 [07180] MAIN connecting to KGP server 162.222.79.109 took 148 ms
 20150511 133038.618 [07180] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 150512.984 [08220] Sauce Connect 4.3.8, build 1673 00301d6
+20150511 150512.995 [08220] Trying to autodetect proxy settings
+20150511 150513.008 [08220] Starting up; pid 8220
+20150511 150513.012 [08220] Command line arguments: sc -u mohanthalla -k ****
+20150511 150513.016 [08220] Using no proxy for connecting to Sauce Labs REST API.
+20150511 150513.216 [08220] Resolving saucelabs.com to 162.222.73.28 took 193 ms.
+20150511 150514.064 [08220] PROXY *** scproxy started ***
+20150511 150514.068 [08220] PROXY found DNS server 10.4.152.10
+20150511 150514.069 [08220] PROXY found DNS server 10.4.150.10
+20150511 150514.070 [08220] PROXY found DNS server 10.4.152.10
+20150511 150514.070 [08220] PROXY found DNS server 10.4.150.10
+20150511 150514.948 [08220] Started scproxy on port 27101.
+20150511 150514.952 [08220] Please wait for 'you may start your tests' to start your tests.
+20150511 150514.958 [08220] Starting secure remote tunnel VM...
+20150511 150519.924 [08220] Secure remote tunnel VM provisioned.
+20150511 150519.932 [08220] Tunnel ID: 4640a02084c1487c9f25fa5a44e885d7
+20150511 150521.183 [08220] Secure remote tunnel VM is now: booting
+20150511 150532.685 [08220] Secure remote tunnel VM is now: running
+20150511 150532.694 [08220] Remote tunnel host is: maki76224.miso.saucelabs.com
+20150511 150532.705 [08220] Using no proxy for connecting to tunnel VM.
+20150511 150533.187 [08220] Resolving maki76224.miso.saucelabs.com to 162.222.76.224 took 2525 ms.
+20150511 150533.199 [08220] Starting Selenium listener...
+20150511 150533.205 [08220] Establishing secure TLS connection to tunnel...
+20150511 150533.224 [08220] [EVDNS] Added nameserver 10.4.152.10:53 as 00B9DB88
+20150511 150533.225 [08220] [EVDNS] Added nameserver 10.4.150.10:53 as 00B9DDA0
+20150511 150533.226 [08220] Selenium listener started on port 4445.
+20150511 150533.384 [08220] MAIN connecting to KGP server 162.222.76.224 took 149 ms
+20150511 150533.390 [08220] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 150535.417 [08220] Sauce Connect is up, you may start your tests.
+20150511 150535.426 [08220] Connection established.
+20150511 150602.501 [08220] PROXY 127.0.0.1:27128 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 150602.503 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150602.542 [08220] PROXY 127.0.0.1:27128 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7636 bytes)
+20150511 150602.708 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150602.709 [08220] PROXY 127.0.0.1:27130 -> GET http://devcontactmanager.devlab.qualit.co.nz/Content/Site.css (423 bytes)
+20150511 150602.724 [08220] PROXY 127.0.0.1:27130 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (5570 bytes)
+20150511 150602.880 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150602.881 [08220] PROXY 127.0.0.1:27131 -> GET http://devcontactmanager.devlab.qualit.co.nz/Content/Custom.css (425 bytes)
+20150511 150602.885 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150602.886 [08220] PROXY 127.0.0.1:27132 -> GET http://devcontactmanager.devlab.qualit.co.nz/Scripts/jquery-1.4.4.min.js (454 bytes)
+20150511 150602.892 [08220] PROXY 127.0.0.1:27131 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (531 bytes)
+20150511 150603.050 [08220] PROXY 127.0.0.1:27132 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (79138 bytes)
+20150511 150603.440 [08220] PROXY 127.0.0.1:27132 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150603.446 [08220] PROXY 127.0.0.1:27132 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150605.621 [08220] PROXY 127.0.0.1:27131 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/DeleteContact/59 (454 bytes)
+20150511 150605.816 [08220] PROXY 127.0.0.1:27131 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 150606.199 [08220] PROXY 127.0.0.1:27131 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (429 bytes)
+20150511 150606.231 [08220] PROXY 127.0.0.1:27131 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150511 150606.545 [08220] PROXY 127.0.0.1:27131 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150606.572 [08220] PROXY 127.0.0.1:27131 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150621.532 [08220] PROXY 127.0.0.1:27130 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 150621.564 [08220] PROXY 127.0.0.1:27130 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150511 150621.877 [08220] PROXY 127.0.0.1:27130 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150621.882 [08220] PROXY 127.0.0.1:27130 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150623.701 [08220] PROXY 127.0.0.1:27128 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (448 bytes)
+20150511 150623.725 [08220] PROXY 127.0.0.1:27128 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (3927 bytes)
+20150511 150624.243 [08220] PROXY 127.0.0.1:27128 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150624.251 [08220] PROXY 127.0.0.1:27128 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150638.542 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150638.543 [08220] PROXY 127.0.0.1:27149 -> POST http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (841 bytes)
+20150511 150638.585 [08220] PROXY 127.0.0.1:27149 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 150638.740 [08220] PROXY 127.0.0.1:27149 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (466 bytes)
+20150511 150638.771 [08220] PROXY 127.0.0.1:27149 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7646 bytes)
+20150511 150640.611 [08220] PROXY 127.0.0.1:27149 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/ViewContact/60 (452 bytes)
+20150511 150640.632 [08220] PROXY 127.0.0.1:27149 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (1853 bytes)
+20150511 150645.539 [08220] PROXY 127.0.0.1:27149 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (452 bytes)
+20150511 150645.566 [08220] PROXY 127.0.0.1:27149 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7646 bytes)
+20150511 150807.034 [08220] PROXY 127.0.0.1:27170 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 150807.039 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150807.076 [08220] PROXY 127.0.0.1:27170 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7878 bytes)
+20150511 150807.787 [08220] PROXY 127.0.0.1:27170 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150807.794 [08220] PROXY 127.0.0.1:27170 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150809.632 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150809.634 [08220] PROXY 127.0.0.1:27173 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/DeleteContact/61 (454 bytes)
+20150511 150809.693 [08220] PROXY 127.0.0.1:27173 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 150809.846 [08220] PROXY 127.0.0.1:27173 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (429 bytes)
+20150511 150809.877 [08220] PROXY 127.0.0.1:27173 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7646 bytes)
+20150511 150810.192 [08220] PROXY 127.0.0.1:27173 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150810.198 [08220] PROXY 127.0.0.1:27173 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150826.707 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150826.708 [08220] PROXY 127.0.0.1:27179 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 150826.741 [08220] PROXY 127.0.0.1:27179 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7646 bytes)
+20150511 150827.253 [08220] PROXY 127.0.0.1:27179 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150827.261 [08220] PROXY 127.0.0.1:27179 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150829.690 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150829.692 [08220] PROXY 127.0.0.1:27182 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (448 bytes)
+20150511 150829.714 [08220] PROXY 127.0.0.1:27182 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (3927 bytes)
+20150511 150830.198 [08220] PROXY 127.0.0.1:27182 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 150830.203 [08220] PROXY 127.0.0.1:27182 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 150846.025 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 150846.026 [08220] PROXY 127.0.0.1:27188 -> POST http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (846 bytes)
+20150511 150846.052 [08220] PROXY 127.0.0.1:27188 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 150846.207 [08220] PROXY 127.0.0.1:27188 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (466 bytes)
+20150511 150846.236 [08220] PROXY 127.0.0.1:27188 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7889 bytes)
+20150511 150848.218 [08220] PROXY 127.0.0.1:27188 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/ViewContact/62 (452 bytes)
+20150511 150848.239 [08220] PROXY 127.0.0.1:27188 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (1860 bytes)
+20150511 150854.019 [08220] PROXY 127.0.0.1:27188 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (452 bytes)
+20150511 150854.070 [08220] PROXY 127.0.0.1:27188 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7889 bytes)
+20150511 151713.720 [08220] PROXY 127.0.0.1:27292 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 151713.721 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 151713.822 [08220] PROXY 127.0.0.1:27292 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7889 bytes)
+20150511 151714.133 [08220] PROXY 127.0.0.1:27292 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 151714.142 [08220] PROXY 127.0.0.1:27292 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 151716.872 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 151716.875 [08220] PROXY 127.0.0.1:27296 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/DeleteContact/62 (454 bytes)
+20150511 151716.908 [08220] PROXY 127.0.0.1:27296 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 151717.209 [08220] PROXY 127.0.0.1:27296 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (429 bytes)
+20150511 151717.238 [08220] PROXY 127.0.0.1:27296 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7646 bytes)
+20150511 151717.548 [08220] PROXY 127.0.0.1:27296 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 151717.551 [08220] PROXY 127.0.0.1:27296 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 151732.162 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 151732.163 [08220] PROXY 127.0.0.1:27301 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 151732.201 [08220] PROXY 127.0.0.1:27301 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7646 bytes)
+20150511 151732.700 [08220] PROXY 127.0.0.1:27301 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 151732.705 [08220] PROXY 127.0.0.1:27301 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 151734.678 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 151734.680 [08220] PROXY 127.0.0.1:27304 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (448 bytes)
+20150511 151734.703 [08220] PROXY 127.0.0.1:27304 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (3927 bytes)
+20150511 151735.184 [08220] PROXY 127.0.0.1:27304 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 151735.193 [08220] PROXY 127.0.0.1:27304 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 151748.809 [08220] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 151748.810 [08220] PROXY 127.0.0.1:27309 -> POST http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (841 bytes)
+20150511 151748.832 [08220] PROXY 127.0.0.1:27309 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 151749.132 [08220] PROXY 127.0.0.1:27309 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (466 bytes)
+20150511 151749.174 [08220] PROXY 127.0.0.1:27309 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7887 bytes)
+20150511 151751.253 [08220] PROXY 127.0.0.1:27309 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/ViewContact/63 (452 bytes)
+20150511 151751.280 [08220] PROXY 127.0.0.1:27309 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (1853 bytes)
+20150511 151757.033 [08220] PROXY 127.0.0.1:27309 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (452 bytes)
+20150511 151757.066 [08220] PROXY 127.0.0.1:27309 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7887 bytes)

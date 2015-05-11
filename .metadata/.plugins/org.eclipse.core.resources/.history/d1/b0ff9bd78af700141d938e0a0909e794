@@ -108,7 +108,7 @@ public class ContactManager {
 	  Home_ContactPage objHome = new Home_ContactPage(_browser);
 	  //Clicks the Delete link of the last contact in the table and returns a boolean value for the status of the Contact deletion
 	  boolean ContactDeletionStatus = objHome.ClickDeleteLinkOnHomePage();
-	  Assert.assertTrue("Contact Deletion is unsuccessful or a user with same First Name exists in table" , ContactDeletionStatus);	   	      
+	  Assert.assertTrue("Contact Deletion is unsuccessful" , ContactDeletionStatus);	   	      
 	 }
  
  @After

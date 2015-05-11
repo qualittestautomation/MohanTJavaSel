@@ -21,7 +21,6 @@ public class Add_ContactPage {
 				
 	}
 	
-	//Enters details in the Add Contact Form
 	public void EnterFormDetails(String FirstName, String LastName, String Phone, String EmailId, String Street1, String Street2, String State, String City, String Zip)
 	{
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[1]/input")).clear();
@@ -45,14 +44,12 @@ public class Add_ContactPage {
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[9]/input")).sendKeys(Zip);				
 	}
 	
-	//Clicks the "Add Contact" button from the Add Details Form page
 	public Home_ContactPage ClickAddContactButtonOnAddContactPage()
 	{
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/input")).click();
 		return new Home_ContactPage(_driver);
 	}
 	
-	//Clicks the "Back to Contacts" link from the Add Contact Form page
 	public Home_ContactPage ClickBackToContactsLinkOnAddContactPage()
 	{
 		_driver.findElement(By.xpath(".//*[@id='main']/a")).click();

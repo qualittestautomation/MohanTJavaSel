@@ -81,7 +81,6 @@ public class View_ContactPage {
 		return Zip;	
 	}
 	
-	//Clicks the "Back to Contacts" link from the Contact's View page
 	public void clickBackToContactLinkOnViewPage()
 	{
 		_driver.findElement(By.xpath(".//*[@id='main']/a")).click();

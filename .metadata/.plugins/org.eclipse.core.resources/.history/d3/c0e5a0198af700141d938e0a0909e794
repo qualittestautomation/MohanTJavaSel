@@ -17,8 +17,7 @@ public class Home_ContactPage {
 		_driver = _browser;
 		WebDriverWait wait = new WebDriverWait(_driver,5);
 		//Waits until the Add a Contact link is displayed on the page
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='addContactLink']")));		
-		wait.until(ExpectedConditions.titleIs("All Contacts"));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='addContactLink']")));				
 	}
 	
 	
@@ -46,7 +45,7 @@ public class Home_ContactPage {
 		return true;
 	}
 	
-	//Clicks the Add a Contact Link on the Home page
+	
 	public Add_ContactPage ClickAddaContactLinkOnHomePage()
 	{
 		WebDriverWait wait = new WebDriverWait(_driver,5);
