@@ -1,0 +1,29 @@
+package pageObjects;
+
+import java.util.List;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class View_ContactPage {
+	
+	public WebDriver _driver;
+	
+	public View_ContactPage(WebDriver _browser)
+	{
+		_driver = _browser;
+		WebDriverWait wait = new WebDriverWait(_driver,5);
+		//Waits until the Add a Contact link is displayed on the page
+		wait.until((ExpectedConditions.titleContains("View Contact:")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='addContactLink']")));				
+	}
+	
+	public String getFirstName()
+	{
+		String FirstName = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[1]/label[2]")).getText();
+		return FirstName;
+	}
+	
+	
+	
+}

@@ -1,0 +1,28 @@
+package pageObjects;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Home_ContactPage {
+	
+	public WebDriver _driver;
+	
+	public void Home_ContactPage(WebDriver _browser)
+	{
+		_driver = _browser;
+		WebDriver wait = new WebDriverWait();
+		
+	}
+	
+	
+
+	public void ClickViewLinkOnHomePage()
+	{
+		
+	}
+	
+	
+	
+	
+	
+}

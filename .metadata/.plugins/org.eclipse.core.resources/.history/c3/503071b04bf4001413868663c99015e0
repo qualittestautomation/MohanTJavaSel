@@ -1,0 +1,31 @@
+package pageObjects;
+
+import java.awt.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Home_ContactPage {
+	
+	public WebDriver _driver;
+	
+	public Home_ContactPage(WebDriver _browser)
+	{
+		_driver = _browser;
+				
+	}
+	
+	
+
+	public void ClickViewLinkOnHomePage()
+	{
+		
+		List<WebElement> allRows = _driver.findElements(By.xpath(".//*[@id='ContactsTable']/tbody/tr"));
+		_driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.countItems()+"]/td[1]/a"));
+	}
+	
+	
+	
+	
+	
+}

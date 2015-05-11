@@ -1,0 +1,49 @@
+package pageObjects;
+
+
+
+import java.util.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Home_ContactPage {
+	
+	public WebDriver _driver;
+	
+	public Home_ContactPage(WebDriver _browser)
+	{
+		_driver = _browser;
+		WebDriverWait wait = new WebDriverWait(_driver,5);
+		//Waits until the Add a Contact link is displayed on the page
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='addContactLink']")));				
+	}
+	
+	
+	//Clicks View link for the last row of contacts table		
+	public void ClickViewLinkOnHomePage()
+	{		
+		List<WebElement> allRows = _driver.findElements(By.xpath(".//*[@id='ContactsTable']/tbody/tr"));		
+		_driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.size()+"]/td[1]/a"));
+	}
+	
+	//Clicks Delete link for the last row of contacts table
+	public void ClickDeleteLinkOnHomePage()
+	{
+		List<WebElement> allRows = _driver.findElements(By.xpath(".//*[@id='ContactsTable']/tbody/tr"));		
+		_driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.size()+"]/td[5]/a"));
+	}
+	
+	public Add_ContactPage ClickAddaContactLinkOnHomePage()
+	{
+		WebDriverWait wait = new WebDriverWait(_driver,5);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='main']/a")));
+		_driver.findElement(By.xpath(".//*[@id='main']/a")).click();
+		return new Add_ContactPage(_driver);
+	}
+	
+	
+	
+	
+}

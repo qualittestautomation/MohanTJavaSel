@@ -1,0 +1,27 @@
+package pageObjects;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Home_ContactPage {
+	
+	public WebDriver _driverhome;
+	
+	public void Home_ContactPage(WebDriver _browser)
+	{
+		_driverhome = _browser;
+	}
+	
+	
+
+	public void ClickViewLinkOnHomePage()
+	{
+		
+	}
+	
+	
+	
+	
+	
+}

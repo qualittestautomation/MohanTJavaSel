@@ -1,0 +1,86 @@
+import static org.junit.Assert.*;
+
+import java.util.Random;
+
+import org.junit.*;
+import org.openqa.selenium.*;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import pageObjects.Add_ContactPage;
+import pageObjects.Home_ContactPage;
+import pageObjects.View_ContactPage;
+ 
+public class ContactManager {
+	
+	public WebDriver _browser;
+	public static WebDriverWait wait;
+	
+  @Before
+	public void _Setup() throws Exception	{
+		  System.setProperty("webdriver.chrome.driver", "lib\\chromedriver.exe");
+		  System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+		  System.setProperty("webdriver.ie.driver", "lib\\IEDriverServer.exe"); 
+		  _browser = new InternetExplorerDriver();
+		  _browser.navigate().to("http://devcontactmanager.devlab.qualit.co.nz/");
+		  _browser.manage().window().maximize();
+		  //WebDriver _browser = new FirefoxDriver();
+		  //WebDriver _browser = new ChromeDriver();		
+	}
+	
+	
+ @Test
+ public void AddViewTest() throws Exception { 
+ 
+  Home_ContactPage objHome = new Home_ContactPage(_browser);
+  
+  Random rand = new Random();
+  int randomnumber = rand.nextInt(20000);
+  
+  String FirstName = "TestFirstName"+randomnumber+"";
+  String LastName = "TestLastName"+randomnumber+"";
+  String Phone = "041234567";
+  String EmailId = "TestEmail"+randomnumber+"";
+  String Street1 = "TestStreet1"+randomnumber+"";
+  String Street2 = "TestStreet2"+randomnumber+"";
+  String State = "CA";
+  String City = "Los Angeles";
+  String Zip = "23145";
+  
+  Add_ContactPage objAdd =  objHome.ClickAddaContactLinkOnHomePage();
+ objAdd.EnterFormDetails(FirstName, LastName, Phone, EmailId, Street1, Street2, State, City, Zip);
+ objAdd.ClickAddContactButtonOnAddContactPage();
+  
+  View_ContactPage objView = objHome.ClickViewLinkOnHomePage();
+  
+  String FirstNameOnViewPage = objView.getFirstName();
+  String LastNameOnViewPage = objView.getLastName();
+  String PhoneOnViewPage = objView.getPhoneNumber();
+  String EmailIdOnViewPage = objView.getEmailId();
+  String Street1OnViewPage = objView.getStreet1();
+  String Street2OnViewPage = objView.getStreet2();
+  String StateOnViewPage = objView.getState();
+  String CityOnViewPage = objView.getCity();
+  String ZipOnViewPage = objView.getZip();
+  
+  assertEquals("FirstName is correct", FirstName, FirstNameOnViewPage);
+
+  
+  
+  
+  
+  //Assert that title is displayed correct:
+  WebElement title = _driver.findElement(By.xpath(".//*[@id='title']/h1"));
+  assertEquals(title.getText(), "Contact Manager");
+   
+  
+ }
+
+ @After
+private void Teardown() {
+	 _browser.quit();
+	
+}
+}

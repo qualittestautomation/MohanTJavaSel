@@ -1,0 +1,542 @@
+20150508 171645.890 [04064] Sauce Connect 4.3.8, build 1673 00301d6
+20150508 171645.913 [04064] Trying to autodetect proxy settings
+20150508 171645.932 [04064] Starting up; pid 4064
+20150508 171645.936 [04064] Command line arguments: sc -u mohanthalla -k ****
+20150508 171645.944 [04064] Using no proxy for connecting to Sauce Labs REST API.
+20150508 171645.966 [04064] Resolving saucelabs.com to 162.222.73.28 took 14 ms.
+20150508 171647.067 [04064] PROXY *** scproxy started ***
+20150508 171647.117 [04064] PROXY found DNS server 10.4.152.10
+20150508 171647.118 [04064] PROXY found DNS server 10.4.150.10
+20150508 171647.120 [04064] PROXY found DNS server 10.4.152.10
+20150508 171647.122 [04064] PROXY found DNS server 10.4.150.10
+20150508 171648.108 [04064] Started scproxy on port 40259.
+20150508 171648.114 [04064] Please wait for 'you may start your tests' to start your tests.
+20150508 171648.125 [04064] Starting secure remote tunnel VM...
+20150508 171653.728 [04064] Secure remote tunnel VM provisioned.
+20150508 171653.737 [04064] Tunnel ID: 9563e35176964047a5db7834a2185aaa
+20150508 171654.793 [04064] Secure remote tunnel VM is now: booting
+20150508 171656.588 [04064] Secure remote tunnel VM is now: running
+20150508 171656.596 [04064] Remote tunnel host is: maki77054.miso.saucelabs.com
+20150508 171656.605 [04064] Using no proxy for connecting to tunnel VM.
+20150508 171657.109 [04064] Resolving maki77054.miso.saucelabs.com to 162.222.77.54 took 2502 ms.
+20150508 171657.121 [04064] Starting Selenium listener...
+20150508 171657.126 [04064] Establishing secure TLS connection to tunnel...
+20150508 171657.147 [04064] [EVDNS] Added nameserver 10.4.152.10:53 as 02542940
+20150508 171657.149 [04064] [EVDNS] Added nameserver 10.4.150.10:53 as 02542B58
+20150508 171657.150 [04064] Selenium listener started on port 4445.
+20150508 171657.307 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150508 171657.314 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 171659.110 [04064] Sauce Connect is up, you may start your tests.
+20150508 171659.120 [04064] Connection established.
+20150508 171733.599 [04064] PROXY 127.0.0.1:40284 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (459 bytes)
+20150508 171733.601 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 171733.694 [04064] PROXY 127.0.0.1:40284 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7403 bytes)
+20150508 171734.022 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 171734.024 [04064] PROXY 127.0.0.1:40286 -> GET http://devcontactmanager.devlab.qualit.co.nz/Content/Site.css (477 bytes)
+20150508 171734.043 [04064] PROXY 127.0.0.1:40286 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (5570 bytes)
+20150508 171734.197 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 171734.199 [04064] PROXY 127.0.0.1:40287 -> GET http://devcontactmanager.devlab.qualit.co.nz/Content/Custom.css (479 bytes)
+20150508 171734.203 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 171734.204 [04064] PROXY 127.0.0.1:40288 -> GET http://devcontactmanager.devlab.qualit.co.nz/Scripts/jquery-1.4.4.min.js (473 bytes)
+20150508 171734.216 [04064] PROXY 127.0.0.1:40287 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (531 bytes)
+20150508 171734.315 [04064] PROXY 127.0.0.1:40288 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (79138 bytes)
+20150508 171735.951 [04064] PROXY 127.0.0.1:40288 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (401 bytes)
+20150508 171735.957 [04064] PROXY 127.0.0.1:40288 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150508 171737.584 [04064] PROXY 127.0.0.1:40288 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/DeleteContact/55 (540 bytes)
+20150508 171737.640 [04064] PROXY 127.0.0.1:40288 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150508 171737.941 [04064] PROXY 127.0.0.1:40288 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (515 bytes)
+20150508 171737.972 [04064] PROXY 127.0.0.1:40288 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7162 bytes)
+20150508 171749.459 [04064] PROXY 127.0.0.1:40288 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (459 bytes)
+20150508 171749.491 [04064] PROXY 127.0.0.1:40288 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7162 bytes)
+20150508 171749.922 [04064] PROXY 127.0.0.1:40288 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (401 bytes)
+20150508 171749.931 [04064] PROXY 127.0.0.1:40288 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150508 171751.435 [04064] PROXY 127.0.0.1:40288 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (534 bytes)
+20150508 171751.456 [04064] PROXY 127.0.0.1:40288 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (3927 bytes)
+20150508 171802.561 [04064] PROXY 127.0.0.1:40288 -> GET http://cache.pack.google.com/edgedl/chrome/dict/en-us-3-0.bdic (376 bytes)
+20150508 171804.017 [04064] PROXY resolved 'cache.pack.google.com' to '74.125.237.165:80'
+20150508 171804.233 [04064] PROXY 127.0.0.1:40288 <- 302 cache.pack.google.com:80 (1355 bytes)
+20150508 171804.394 [04064] PROXY 127.0.0.1:40287 -> GET http://r1---sn-uxanug5jax5g-fabe.c.pack.google.com/edgedl/chrome/dict/en-us-3-0.bdic?cms_redirect=yes&expire=1431076684&ip=203.171.40.104&ipbits=0&mm=28&mn=sn-uxanug5jax5g-fabe&ms=nvh&mt=1431062026&mv=u&pl=19&shardbypass=yes&sparams=expire,ip,ipbits,mm,mn,ms,mv,pl,shardbypass&signature=55F305C50DF1E42AF4AD823BD0C3C2BCE7765EFA.377E573345CCF24398AFC44FE6C0B2B945319009&key=cms1 (713 bytes)
+20150508 171804.573 [04064] PROXY resolved 'r1---sn-uxanug5jax5g-fabe.c.pack.google.com' to '203.97.26.12:80'
+20150508 171804.752 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 171804.754 [04064] PROXY 127.0.0.1:40301 -> POST http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (962 bytes)
+20150508 171804.779 [04064] PROXY 127.0.0.1:40301 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150508 171804.831 [04064] PROXY 127.0.0.1:40287 <- 200 r1---sn-uxanug5jax5g-fabe.c.pack.google.com:80 (441365 bytes)
+20150508 171805.661 [04064] PROXY 127.0.0.1:40301 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (534 bytes)
+20150508 171805.702 [04064] PROXY 127.0.0.1:40301 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150508 171808.760 [04064] PROXY 127.0.0.1:40301 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/ViewContact/56 (538 bytes)
+20150508 171808.825 [04064] PROXY 127.0.0.1:40301 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (1860 bytes)
+20150508 171813.966 [04064] PROXY 127.0.0.1:40301 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (538 bytes)
+20150508 171813.993 [04064] PROXY 127.0.0.1:40301 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150508 171834.977 [04064] PROXY 127.0.0.1:40287 -> connection error: An existing connection was forcibly closed by the remote host.
+20150508 172222.672 [04064] PROXY 127.0.0.1:40363 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150508 172222.674 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 172222.719 [04064] PROXY 127.0.0.1:40363 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150508 172223.243 [04064] PROXY 127.0.0.1:40363 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150508 172223.250 [04064] PROXY 127.0.0.1:40363 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150508 172225.717 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 172225.718 [04064] PROXY 127.0.0.1:40366 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/DeleteContact/56 (454 bytes)
+20150508 172225.762 [04064] PROXY 127.0.0.1:40366 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150508 172226.059 [04064] PROXY 127.0.0.1:40366 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (429 bytes)
+20150508 172226.091 [04064] PROXY 127.0.0.1:40366 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7162 bytes)
+20150508 172226.884 [04064] PROXY 127.0.0.1:40366 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150508 172226.890 [04064] PROXY 127.0.0.1:40366 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150508 172241.056 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 172241.058 [04064] PROXY 127.0.0.1:40372 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150508 172241.134 [04064] PROXY 127.0.0.1:40372 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7162 bytes)
+20150508 172241.925 [04064] PROXY 127.0.0.1:40372 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150508 172241.929 [04064] PROXY 127.0.0.1:40372 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150508 172243.663 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 172243.664 [04064] PROXY 127.0.0.1:40375 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (448 bytes)
+20150508 172243.686 [04064] PROXY 127.0.0.1:40375 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (3927 bytes)
+20150508 172243.993 [04064] PROXY 127.0.0.1:40375 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150508 172243.999 [04064] PROXY 127.0.0.1:40375 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150508 172257.884 [04064] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150508 172257.885 [04064] PROXY 127.0.0.1:40380 -> POST http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (846 bytes)
+20150508 172257.908 [04064] PROXY 127.0.0.1:40380 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150508 172258.062 [04064] PROXY 127.0.0.1:40380 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (466 bytes)
+20150508 172258.090 [04064] PROXY 127.0.0.1:40380 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150508 172259.880 [04064] PROXY 127.0.0.1:40380 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/ViewContact/57 (452 bytes)
+20150508 172259.903 [04064] PROXY 127.0.0.1:40380 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (1860 bytes)
+20150508 172305.305 [04064] PROXY 127.0.0.1:40380 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (452 bytes)
+20150508 172305.357 [04064] PROXY 127.0.0.1:40380 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150508 175048.599 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175048.621 [04064] Disconnected - you are now offline.
+20150508 175049.595 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175050.594 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175051.587 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175052.597 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175053.590 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175054.602 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175055.609 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175056.610 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175057.617 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175058.624 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175059.628 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175100.621 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175101.624 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175102.629 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175103.632 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175104.855 [04064] MAIN connecting to KGP server 162.222.77.54 took 178 ms
+20150508 175104.861 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 175106.242 [04064] KGP warning: no keepalive ack for > 5s
+20150508 175107.313 [04064] Connection established.
+20150508 184254.034 [04064] KGP warning: no keepalive ack for > 5s
+20150508 184254.118 [04064] Disconnected - you are now offline.
+20150508 184255.025 [04064] KGP warning: no keepalive ack for > 5s
+20150508 184256.034 [04064] KGP warning: no keepalive ack for > 5s
+20150508 184257.027 [04064] KGP warning: no keepalive ack for > 5s
+20150508 184258.035 [04064] KGP warning: no keepalive ack for > 5s
+20150508 184259.025 [04064] KGP warning: no keepalive ack for > 5s
+20150508 184301.988 [04064] MAIN connecting to KGP server 162.222.77.54 took 179 ms
+20150508 184301.995 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 184303.353 [04064] KGP warning: no keepalive ack for > 5s
+20150508 184304.399 [04064] Connection established.
+20150508 190349.455 [04064] MAIN connecting to KGP server 162.222.77.54 took 1116 ms
+20150508 190349.554 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190407.550 [04064] MAIN connecting to KGP server 162.222.77.54 took 1082 ms
+20150508 190407.608 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190421.660 [04064] MAIN connecting to KGP server 162.222.77.54 took 1085 ms
+20150508 190421.728 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190428.295 [04064] MAIN connecting to KGP server 162.222.77.54 took 1104 ms
+20150508 190428.360 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190444.617 [04064] MAIN connecting to KGP server 162.222.77.54 took 1111 ms
+20150508 190444.902 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190502.507 [04064] MAIN connecting to KGP server 162.222.77.54 took 1075 ms
+20150508 190502.558 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190535.644 [04064] MAIN connecting to KGP server 162.222.77.54 took 151 ms
+20150508 190535.647 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190544.496 [04064] MAIN connecting to KGP server 162.222.77.54 took 1106 ms
+20150508 190544.545 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190709.563 [04064] MAIN connecting to KGP server 162.222.77.54 took 1146 ms
+20150508 190709.631 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190743.619 [04064] MAIN connecting to KGP server 162.222.77.54 took 1125 ms
+20150508 190743.678 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190803.500 [04064] MAIN connecting to KGP server 162.222.77.54 took 1108 ms
+20150508 190803.558 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190810.030 [04064] MAIN connecting to KGP server 162.222.77.54 took 3916 ms
+20150508 190810.096 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190932.649 [04064] MAIN connecting to KGP server 162.222.77.54 took 2069 ms
+20150508 190932.656 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 190938.073 [04064] MAIN connecting to KGP server 162.222.77.54 took 3879 ms
+20150508 190938.133 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 191037.404 [04064] MAIN connecting to KGP server 162.222.77.54 took 1096 ms
+20150508 191037.466 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 191225.434 [04064] MAIN connecting to KGP server 162.222.77.54 took 1153 ms
+20150508 191225.478 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 191304.848 [04064] MAIN connecting to KGP server 162.222.77.54 took 624 ms
+20150508 191305.100 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 191429.606 [04064] MAIN connecting to KGP server 162.222.77.54 took 1076 ms
+20150508 191429.654 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 191437.113 [04064] MAIN connecting to KGP server 162.222.77.54 took 3852 ms
+20150508 191437.173 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 191520.929 [04064] MAIN connecting to KGP server 162.222.77.54 took 1073 ms
+20150508 191521.018 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 213734.856 [04064] KGP warning: no keepalive ack for > 5s
+20150508 213734.909 [04064] Disconnected - you are now offline.
+20150508 213735.861 [04064] KGP warning: no keepalive ack for > 5s
+20150508 213736.851 [04064] KGP warning: no keepalive ack for > 5s
+20150508 213737.863 [04064] KGP warning: no keepalive ack for > 5s
+20150508 213738.849 [04064] KGP warning: no keepalive ack for > 5s
+20150508 213739.860 [04064] KGP warning: no keepalive ack for > 5s
+20150508 213742.631 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150508 213742.637 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 213743.943 [04064] KGP warning: no keepalive ack for > 5s
+20150508 213744.960 [04064] Connection established.
+20150508 224042.206 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224043.207 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224044.208 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224045.210 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224046.211 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224047.212 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224048.215 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224049.216 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224050.217 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224051.218 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224052.219 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224053.220 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224054.244 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224055.245 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224056.245 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224059.651 [04064] Disconnected - you are now offline.
+20150508 224100.696 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150508 224100.703 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150508 224102.006 [04064] KGP warning: no keepalive ack for > 5s
+20150508 224103.100 [04064] Connection established.
+20150509 002856.836 [04064] KGP warning: no keepalive ack for > 5s
+20150509 002856.885 [04064] Disconnected - you are now offline.
+20150509 002858.648 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150509 002858.655 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 002859.958 [04064] KGP warning: no keepalive ack for > 5s
+20150509 002900.965 [04064] KGP warning: no keepalive ack for > 5s
+20150509 002902.043 [04064] Connection established.
+20150509 020312.092 [04064] MAIN connecting to KGP server 162.222.77.54 took 2849 ms
+20150509 020312.101 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 022048.730 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150509 022048.800 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 032038.462 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150509 032038.469 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 073153.185 [04064] MAIN connecting to KGP server 162.222.77.54 took 2734 ms
+20150509 073153.211 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 091505.960 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150509 091505.966 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 091507.264 [04064] KGP warning: no keepalive ack for > 5s
+20150509 091507.349 [04064] Disconnected - you are now offline.
+20150509 091508.997 [04064] Connection established.
+20150509 114103.540 [04064] KGP warning: no keepalive ack for > 5s
+20150509 114103.953 [04064] Disconnected - you are now offline.
+20150509 114104.564 [04064] Connection established.
+20150509 143450.855 [04064] KGP warning: no keepalive ack for > 5s
+20150509 143450.963 [04064] Disconnected - you are now offline.
+20150509 143451.851 [04064] KGP warning: no keepalive ack for > 5s
+20150509 143452.842 [04064] KGP warning: no keepalive ack for > 5s
+20150509 143453.850 [04064] KGP warning: no keepalive ack for > 5s
+20150509 143454.841 [04064] KGP warning: no keepalive ack for > 5s
+20150509 143455.841 [04064] KGP warning: no keepalive ack for > 5s
+20150509 143458.653 [04064] MAIN connecting to KGP server 162.222.77.54 took 170 ms
+20150509 143458.653 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 143500.000 [04064] KGP warning: no keepalive ack for > 5s
+20150509 143501.113 [04064] Connection established.
+20150509 161538.385 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150509 161538.393 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 172356.973 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150509 172356.980 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 172358.310 [04064] KGP warning: no keepalive ack for > 5s
+20150509 172358.362 [04064] Disconnected - you are now offline.
+20150509 172400.349 [04064] Connection established.
+20150509 190339.768 [04064] MAIN connecting to KGP server 162.222.77.54 took 5158 ms
+20150509 190339.801 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 190349.800 [04064] MAIN connecting to KGP server 162.222.77.54 took 1157 ms
+20150509 190350.371 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 190405.562 [04064] MAIN connecting to KGP server 162.222.77.54 took 1085 ms
+20150509 190405.840 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 190414.897 [04064] MAIN connecting to KGP server 162.222.77.54 took 1192 ms
+20150509 190421.825 [04064] CMD socket 892 timeout
+20150509 190421.825 [04064] Disconnected - you are now offline.
+20150509 190425.996 [04064] CMD socket 892 timeout
+20150509 190429.097 [04064] CMD socket 892 timeout
+20150509 190438.714 [04064] CMD socket 892 timeout
+20150509 190441.815 [04064] CMD socket 892 timeout
+20150509 190445.650 [04064] CMD socket 892 timeout
+20150509 190448.751 [04064] CMD socket 892 timeout
+20150509 190456.934 [04064] CMD socket 892 timeout
+20150509 190501.051 [04064] CMD socket 892 timeout
+20150509 192017.303 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 192019.490 [04064] Connection established.
+20150509 230517.491 [04064] KGP warning: no keepalive ack for > 5s
+20150509 230518.161 [04064] Disconnected - you are now offline.
+20150509 230518.484 [04064] KGP warning: no keepalive ack for > 5s
+20150509 230519.482 [04064] KGP warning: no keepalive ack for > 5s
+20150509 230520.483 [04064] KGP warning: no keepalive ack for > 5s
+20150509 230521.489 [04064] KGP warning: no keepalive ack for > 5s
+20150509 230522.497 [04064] KGP warning: no keepalive ack for > 5s
+20150509 230527.427 [04064] MAIN connecting to KGP server 162.222.77.54 took 168 ms
+20150509 230527.432 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150509 230528.768 [04064] KGP warning: no keepalive ack for > 5s
+20150509 230529.862 [04064] Connection established.
+20150509 233038.106 [04064] MAIN connecting to KGP server 162.222.77.54 took 5855 ms
+20150509 233038.113 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 012531.611 [04064] MAIN connecting to KGP server 162.222.77.54 took 151 ms
+20150510 012531.617 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 032751.534 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150510 032751.565 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 041934.366 [04064] KGP warning: no keepalive ack for > 5s
+20150510 041934.447 [04064] Disconnected - you are now offline.
+20150510 041935.369 [04064] KGP warning: no keepalive ack for > 5s
+20150510 041936.373 [04064] KGP warning: no keepalive ack for > 5s
+20150510 041937.366 [04064] KGP warning: no keepalive ack for > 5s
+20150510 041938.374 [04064] KGP warning: no keepalive ack for > 5s
+20150510 041939.374 [04064] KGP warning: no keepalive ack for > 5s
+20150510 041941.830 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150510 041941.838 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 041943.141 [04064] KGP warning: no keepalive ack for > 5s
+20150510 041944.187 [04064] Connection established.
+20150510 080859.455 [04064] KGP warning: no keepalive ack for > 5s
+20150510 080859.477 [04064] Disconnected - you are now offline.
+20150510 080900.462 [04064] KGP warning: no keepalive ack for > 5s
+20150510 080901.452 [04064] KGP warning: no keepalive ack for > 5s
+20150510 080902.460 [04064] KGP warning: no keepalive ack for > 5s
+20150510 080903.453 [04064] KGP warning: no keepalive ack for > 5s
+20150510 080904.454 [04064] KGP warning: no keepalive ack for > 5s
+20150510 080909.245 [04064] MAIN connecting to KGP server 162.222.77.54 took 147 ms
+20150510 080909.250 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 080910.549 [04064] KGP warning: no keepalive ack for > 5s
+20150510 080911.627 [04064] Connection established.
+20150510 080952.862 [04064] MAIN connecting to KGP server 162.222.77.54 took 147 ms
+20150510 080952.871 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 090030.889 [04064] KGP warning: no keepalive ack for > 5s
+20150510 090030.941 [04064] Disconnected - you are now offline.
+20150510 090031.963 [04064] Connection established.
+20150510 102026.812 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150510 102026.819 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 125001.414 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150510 125001.420 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 131355.006 [04064] MAIN connecting to KGP server 162.222.77.54 took 2849 ms
+20150510 131355.012 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 131356.317 [04064] KGP warning: no keepalive ack for > 5s
+20150510 131356.323 [04064] Disconnected - you are now offline.
+20150510 131357.340 [04064] Connection established.
+20150510 150648.516 [04064] KGP warning: no keepalive ack for > 5s
+20150510 150648.569 [04064] Disconnected - you are now offline.
+20150510 150649.515 [04064] KGP warning: no keepalive ack for > 5s
+20150510 150650.508 [04064] KGP warning: no keepalive ack for > 5s
+20150510 150651.507 [04064] KGP warning: no keepalive ack for > 5s
+20150510 150652.507 [04064] KGP warning: no keepalive ack for > 5s
+20150510 150653.519 [04064] KGP warning: no keepalive ack for > 5s
+20150510 150656.611 [04064] MAIN connecting to KGP server 162.222.77.54 took 181 ms
+20150510 150656.619 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 150657.979 [04064] KGP warning: no keepalive ack for > 5s
+20150510 150659.039 [04064] Connection established.
+20150510 171054.217 [04064] MAIN connecting to KGP server 162.222.77.54 took 151 ms
+20150510 171054.225 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 175033.221 [04064] MAIN connecting to KGP server 162.222.77.54 took 3149 ms
+20150510 175033.229 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 175034.554 [04064] KGP warning: no keepalive ack for > 5s
+20150510 175034.971 [04064] Disconnected - you are now offline.
+20150510 175035.581 [04064] Connection established.
+20150510 182422.807 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150510 182422.814 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 182951.441 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150510 182951.448 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190346.750 [04064] MAIN connecting to KGP server 162.222.77.54 took 1087 ms
+20150510 190347.161 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190447.547 [04064] MAIN connecting to KGP server 162.222.77.54 took 1191 ms
+20150510 190447.637 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190508.422 [04064] MAIN connecting to KGP server 162.222.77.54 took 1101 ms
+20150510 190508.541 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190534.421 [04064] MAIN connecting to KGP server 162.222.77.54 took 1121 ms
+20150510 190534.535 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190629.811 [04064] MAIN connecting to KGP server 162.222.77.54 took 1101 ms
+20150510 190629.881 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190649.504 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150510 190649.511 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190653.893 [04064] MAIN connecting to KGP server 162.222.77.54 took 1064 ms
+20150510 190653.954 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190742.586 [04064] MAIN connecting to KGP server 162.222.77.54 took 1110 ms
+20150510 190742.645 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190748.564 [04064] MAIN connecting to KGP server 162.222.77.54 took 1077 ms
+20150510 190748.623 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190818.324 [04064] MAIN connecting to KGP server 162.222.77.54 took 1060 ms
+20150510 190818.414 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190848.728 [04064] MAIN connecting to KGP server 162.222.77.54 took 1022 ms
+20150510 190848.787 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190924.832 [04064] MAIN connecting to KGP server 162.222.77.54 took 1080 ms
+20150510 190924.894 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 190950.914 [04064] MAIN connecting to KGP server 162.222.77.54 took 638 ms
+20150510 190951.188 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191013.172 [04064] MAIN connecting to KGP server 162.222.77.54 took 2342 ms
+20150510 191013.225 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191037.397 [04064] MAIN connecting to KGP server 162.222.77.54 took 2186 ms
+20150510 191037.435 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191139.004 [04064] MAIN connecting to KGP server 162.222.77.54 took 3900 ms
+20150510 191139.070 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191217.137 [04064] MAIN connecting to KGP server 162.222.77.54 took 1018 ms
+20150510 191217.209 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191256.478 [04064] MAIN connecting to KGP server 162.222.77.54 took 1117 ms
+20150510 191256.688 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191355.062 [04064] MAIN connecting to KGP server 162.222.77.54 took 2288 ms
+20150510 191355.066 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191616.266 [04064] MAIN connecting to KGP server 162.222.77.54 took 2013 ms
+20150510 191616.320 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191843.660 [04064] MAIN connecting to KGP server 162.222.77.54 took 103 ms
+20150510 191843.928 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191916.070 [04064] MAIN connecting to KGP server 162.222.77.54 took 1019 ms
+20150510 191916.131 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 191928.179 [04064] MAIN connecting to KGP server 162.222.77.54 took 1073 ms
+20150510 191928.248 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 192050.712 [04064] MAIN connecting to KGP server 162.222.77.54 took 361 ms
+20150510 192233.354 [04064] CMD socket 892 timeout
+20150510 192235.596 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 192235.598 [04064] Connection established.
+20150510 211611.868 [04064] KGP warning: no keepalive ack for > 5s
+20150510 211611.942 [04064] Connection established.
+20150510 211612.871 [04064] KGP warning: no keepalive ack for > 5s
+20150510 211613.861 [04064] KGP warning: no keepalive ack for > 5s
+20150510 211614.862 [04064] KGP warning: no keepalive ack for > 5s
+20150510 211615.870 [04064] KGP warning: no keepalive ack for > 5s
+20150510 211616.861 [04064] KGP warning: no keepalive ack for > 5s
+20150510 211621.738 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150510 211621.764 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 211624.257 [04064] KGP warning: no keepalive ack for > 5s
+20150510 211625.307 [04064] Connection established.
+20150510 223804.242 [04064] KGP warning: no keepalive ack for > 5s
+20150510 223804.295 [04064] Connection established.
+20150510 223805.242 [04064] KGP warning: no keepalive ack for > 5s
+20150510 223806.235 [04064] KGP warning: no keepalive ack for > 5s
+20150510 223814.534 [04064] MAIN connecting to KGP server 162.222.77.54 took 151 ms
+20150510 223814.540 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 223815.839 [04064] KGP warning: no keepalive ack for > 5s
+20150510 223816.870 [04064] Connection established.
+20150510 233152.122 [04064] MAIN connecting to KGP server 162.222.77.54 took 2849 ms
+20150510 233152.129 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150510 233153.427 [04064] KGP warning: no keepalive ack for > 5s
+20150510 233153.465 [04064] Connection established.
+20150510 233155.109 [04064] Connection established.
+20150511 010540.718 [04064] MAIN connecting to KGP server 162.222.77.54 took 151 ms
+20150511 010540.727 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 032110.320 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150511 032110.327 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 035535.978 [04064] MAIN connecting to KGP server 162.222.77.54 took 3151 ms
+20150511 035535.987 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 035556.078 [04064] MAIN connecting to KGP server 162.222.77.54 took 2849 ms
+20150511 035556.084 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 035557.390 [04064] KGP warning: no keepalive ack for > 5s
+20150511 035558.226 [04064] Connection established.
+20150511 035558.432 [04064] Connection established.
+20150511 041108.712 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150511 041108.732 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 041838.729 [04064] MAIN connecting to KGP server 162.222.77.54 took 149 ms
+20150511 041838.736 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 042216.782 [04064] MAIN connecting to KGP server 162.222.77.54 took 148 ms
+20150511 042216.844 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 042218.154 [04064] KGP warning: no keepalive ack for > 5s
+20150511 042218.208 [04064] Connection established.
+20150511 042219.154 [04064] Connection established.
+20150511 043643.385 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150511 043643.404 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 053514.049 [04064] MAIN connecting to KGP server 162.222.77.54 took 2856 ms
+20150511 053514.062 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 054332.725 [04064] KGP warning: no keepalive ack for > 5s
+20150511 054332.810 [04064] Connection established.
+20150511 054333.720 [04064] KGP warning: no keepalive ack for > 5s
+20150511 054334.734 [04064] KGP warning: no keepalive ack for > 5s
+20150511 054335.723 [04064] KGP warning: no keepalive ack for > 5s
+20150511 054336.720 [04064] KGP warning: no keepalive ack for > 5s
+20150511 054337.731 [04064] KGP warning: no keepalive ack for > 5s
+20150511 054340.548 [04064] MAIN connecting to KGP server 162.222.77.54 took 147 ms
+20150511 054340.573 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 054341.865 [04064] KGP warning: no keepalive ack for > 5s
+20150511 054344.246 [04064] Connection established.
+20150511 062623.238 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150511 062623.246 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 065137.772 [04064] MAIN connecting to KGP server 162.222.77.54 took 151 ms
+20150511 065137.778 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 071037.397 [04064] MAIN connecting to KGP server 162.222.77.54 took 150 ms
+20150511 071037.403 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 091038.532 [04064] MAIN connecting to KGP server 162.222.77.54 took 3159 ms
+20150511 091038.539 [04064] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 125311.854 [07180] Sauce Connect 4.3.8, build 1673 00301d6
+20150511 125311.866 [07180] Trying to autodetect proxy settings
+20150511 125311.877 [07180] Starting up; pid 7180
+20150511 125311.882 [07180] Command line arguments: sc -u mohanthalla -k ****
+20150511 125311.886 [07180] Using no proxy for connecting to Sauce Labs REST API.
+20150511 125311.901 [07180] Resolving saucelabs.com to 162.222.73.28 took 9 ms.
+20150511 125312.690 [07180] PROXY *** scproxy started ***
+20150511 125312.695 [07180] PROXY found DNS server 10.4.152.10
+20150511 125312.695 [07180] PROXY found DNS server 10.4.150.10
+20150511 125312.695 [07180] PROXY found DNS server 10.4.152.10
+20150511 125312.695 [07180] PROXY found DNS server 10.4.150.10
+20150511 125313.586 [07180] Started scproxy on port 25470.
+20150511 125313.590 [07180] Please wait for 'you may start your tests' to start your tests.
+20150511 125313.598 [07180] Starting secure remote tunnel VM...
+20150511 125319.837 [07180] Secure remote tunnel VM provisioned.
+20150511 125319.844 [07180] Tunnel ID: 1d38dc3656fa4e7f99ed99dc7be88c95
+20150511 125320.666 [07180] Secure remote tunnel VM is now: booting
+20150511 125332.331 [07180] Secure remote tunnel VM is now: running
+20150511 125332.337 [07180] Remote tunnel host is: maki79109.miso.saucelabs.com
+20150511 125332.347 [07180] Using no proxy for connecting to tunnel VM.
+20150511 125332.689 [07180] Resolving maki79109.miso.saucelabs.com to 162.222.79.109 took 335 ms.
+20150511 125332.699 [07180] Starting Selenium listener...
+20150511 125332.706 [07180] Establishing secure TLS connection to tunnel...
+20150511 125332.722 [07180] [EVDNS] Added nameserver 10.4.152.10:53 as 0261DB88
+20150511 125332.723 [07180] [EVDNS] Added nameserver 10.4.150.10:53 as 0261DDA0
+20150511 125332.725 [07180] Selenium listener started on port 4445.
+20150511 125332.880 [07180] MAIN connecting to KGP server 162.222.79.109 took 149 ms
+20150511 125332.889 [07180] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 125334.611 [07180] Sauce Connect is up, you may start your tests.
+20150511 125334.619 [07180] Connection established.
+20150511 125433.603 [07180] PROXY 127.0.0.1:25503 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 125433.603 [07180] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 125438.115 [07180] PROXY 127.0.0.1:25503 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150511 125438.283 [07180] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 125438.284 [07180] PROXY 127.0.0.1:25507 -> GET http://devcontactmanager.devlab.qualit.co.nz/Content/Site.css (423 bytes)
+20150511 125438.306 [07180] PROXY 127.0.0.1:25507 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (5570 bytes)
+20150511 125438.433 [07180] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 125438.434 [07180] PROXY 127.0.0.1:25508 -> GET http://devcontactmanager.devlab.qualit.co.nz/Content/Custom.css (425 bytes)
+20150511 125438.440 [07180] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 125438.441 [07180] PROXY 127.0.0.1:25509 -> GET http://devcontactmanager.devlab.qualit.co.nz/Scripts/jquery-1.4.4.min.js (454 bytes)
+20150511 125438.471 [07180] PROXY 127.0.0.1:25508 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (531 bytes)
+20150511 125438.599 [07180] PROXY 127.0.0.1:25509 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (79138 bytes)
+20150511 125440.058 [07180] PROXY 127.0.0.1:25509 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 125440.092 [07180] PROXY 127.0.0.1:25509 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 125442.234 [07180] PROXY 127.0.0.1:25508 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/DeleteContact/57 (454 bytes)
+20150511 125442.786 [07180] PROXY 127.0.0.1:25508 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 125443.492 [07180] PROXY 127.0.0.1:25508 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (429 bytes)
+20150511 125443.525 [07180] PROXY 127.0.0.1:25508 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7162 bytes)
+20150511 125443.989 [07180] PROXY 127.0.0.1:25508 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 125444.013 [07180] PROXY 127.0.0.1:25508 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 125456.637 [07180] PROXY 127.0.0.1:25507 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (373 bytes)
+20150511 125456.795 [07180] PROXY 127.0.0.1:25507 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7162 bytes)
+20150511 125457.207 [07180] PROXY 127.0.0.1:25507 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 125457.213 [07180] PROXY 127.0.0.1:25507 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 125459.103 [07180] PROXY 127.0.0.1:25503 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (448 bytes)
+20150511 125459.267 [07180] PROXY 127.0.0.1:25503 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (3927 bytes)
+20150511 125459.716 [07180] PROXY 127.0.0.1:25503 -> GET http://devcontactmanager.devlab.qualit.co.nz/favicon.ico (328 bytes)
+20150511 125459.720 [07180] PROXY 127.0.0.1:25503 <- 404 devcontactmanager.devlab.qualit.co.nz:80 (1734 bytes)
+20150511 125513.672 [07180] PROXY resolved 'devcontactmanager.devlab.qualit.co.nz' to '10.4.60.21:80'
+20150511 125513.674 [07180] PROXY 127.0.0.1:25520 -> POST http://devcontactmanager.devlab.qualit.co.nz/Contacts/AddContact (846 bytes)
+20150511 125513.882 [07180] PROXY 127.0.0.1:25520 <- 302 devcontactmanager.devlab.qualit.co.nz:80 (380 bytes)
+20150511 125514.039 [07180] PROXY 127.0.0.1:25520 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (466 bytes)
+20150511 125514.073 [07180] PROXY 127.0.0.1:25520 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150511 125517.096 [07180] PROXY 127.0.0.1:25520 -> GET http://devcontactmanager.devlab.qualit.co.nz/Contacts/ViewContact/58 (452 bytes)
+20150511 125517.161 [07180] PROXY 127.0.0.1:25520 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (1860 bytes)
+20150511 125522.284 [07180] PROXY 127.0.0.1:25520 -> GET http://devcontactmanager.devlab.qualit.co.nz/ (452 bytes)
+20150511 125522.317 [07180] PROXY 127.0.0.1:25520 <- 200 devcontactmanager.devlab.qualit.co.nz:80 (7405 bytes)
+20150511 130246.451 [07180] MAIN connecting to KGP server 162.222.79.109 took 148 ms
+20150511 130246.459 [07180] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 132536.154 [07180] MAIN connecting to KGP server 162.222.79.109 took 5752 ms
+20150511 132536.161 [07180] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 132851.217 [07180] MAIN connecting to KGP server 162.222.79.109 took 147 ms
+20150511 132851.222 [07180] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 133020.559 [07180] KGP warning: no keepalive ack for > 5s
+20150511 133021.039 [07180] Disconnected - you are now offline.
+20150511 133021.554 [07180] KGP warning: no keepalive ack for > 5s
+20150511 133022.564 [07180] KGP warning: no keepalive ack for > 5s
+20150511 133023.558 [07180] KGP warning: no keepalive ack for > 5s
+20150511 133024.556 [07180] KGP warning: no keepalive ack for > 5s
+20150511 133025.562 [07180] KGP warning: no keepalive ack for > 5s
+20150511 133028.439 [07180] MAIN connecting to KGP server 162.222.79.109 took 169 ms
+20150511 133028.444 [07180] MAIN warning, failed to set KGP bufferevent priority to 0
+20150511 133030.290 [07180] KGP warning: no keepalive ack for > 5s
+20150511 133031.300 [07180] Connection established.
+20150511 133038.614 [07180] MAIN connecting to KGP server 162.222.79.109 took 148 ms
+20150511 133038.618 [07180] MAIN warning, failed to set KGP bufferevent priority to 0

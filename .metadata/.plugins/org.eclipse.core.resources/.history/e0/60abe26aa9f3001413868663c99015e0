@@ -1,0 +1,29 @@
+package pageObjects;
+
+import java.awt.List;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+public class Add_ContactPage {
+	
+	
+    public WebDriver _driver;
+	
+	public void Add_ContactPage(WebDriver _browser)
+	{
+		_driver = _browser;
+				
+	}
+	
+	public EnterFormDetails(string FirstName, String LastName, String Phone, String EmailId, String Street1, String Street2, String State, String City, String Zip)
+	{
+		
+		
+	}
+	
+	
+	
+
+}
