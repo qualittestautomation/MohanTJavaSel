@@ -1,0 +1,92 @@
+package pageObjects;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Update_ContactPage {
+	
+	public WebDriver _driver;
+	
+	public Update_ContactPage(WebDriver _browser)
+	{
+		_driver = _browser;
+		WebDriverWait wait = new WebDriverWait(_driver,5);
+		//Waits until the Add a Contact link is displayed on the page
+		wait.until((ExpectedConditions.titleContains("View Contact:")));
+		wait.until((ExpectedConditions.textToBePresentInElementValue(By.xpath(".//*[@id='main']/form/input[3]"), "Update Contact")));
+				
+	}
+
+	//Gets the First name of user from the Contact's View page
+		public void setFirstName(String FirstName)
+		{
+			_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[1]/input")).clear();
+			_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[1]/input")).sendKeys(FirstName);			
+		}
+		
+		//Gets the Last name of user from the Contact's View page
+		public void setLastName(LastName)
+		{
+			_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[2]/input")).clear();
+			_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[2]/input")).sendKeys(LastName);
+			
+		}
+		
+		//Gets the Phone Number of user from the Contact's View page
+		public String getPhoneNumber()
+		{
+			String PhoneNumber = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[3]/label[2]")).getText();
+			return PhoneNumber;
+		}
+		
+		//Gets the EmailId of user from the Contact's View page
+		public String getEmailId()
+		{
+			String EmailId = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[4]/label[2]")).getText();
+			return EmailId;		
+		}
+		
+		//Gets the Street1 details of user from the Contact's View page
+		public String getStreet1()
+		{
+			String Street1 = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[5]/label[2]")).getText();
+			return Street1;	
+		}
+		
+		//Gets the Street2 details of user from the Contact's View page
+		public String getStreet2()
+		{
+			String Street2 = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[6]/label[2]")).getText();
+			return Street2;	
+		}
+		
+		//Gets the State details of user from the Contact's View page
+		public String getState()
+		{
+			String State = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[7]/label[2]")).getText();
+			return State;	
+		}
+		
+		//Gets the City details of user from the Contact's View page
+		public String getCity()
+		{
+			String City = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[8]/label[2]")).getText();
+			return City;	
+		}
+		
+		//Gets the Zip details of user from the Contact's View page
+		public String getZip()
+		{
+			String Zip = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[9]/label[2]")).getText();
+			return Zip;	
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+}

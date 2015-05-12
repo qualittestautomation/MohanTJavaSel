@@ -22,7 +22,7 @@ public class Add_ContactPage {
 	}
 	
 	//Enters details in the Add Contact Form
-	public void EnterFormDetails(String FirstName, String LastName, String Phone, String EmailId, String Street1, String Street2, String State, String City, String Zip)
+	public void EnterFormDetails(String FirstName, String LastName, String Phone, String EmailId, String Street1, String Street2, String Region, String City, String Zip)
 	{
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[1]/input")).clear();
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[1]/input")).sendKeys(FirstName);
@@ -36,9 +36,9 @@ public class Add_ContactPage {
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[5]/input")).sendKeys(Street1);
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[6]/input")).clear();
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[6]/input")).sendKeys(Street2);		
-		WebElement DropdownListBox = _driver.findElement(By.xpath(".//*[@id='Contact_Address_State']"));
-		Select Stateinput = new Select(DropdownListBox);
-		Stateinput.selectByValue(State);		
+		WebElement DropdownListBox = _driver.findElement(By.xpath(".//*[@id='Contact_Address_Region']"));
+		Select Regioninput = new Select(DropdownListBox);
+		Regioninput.selectByVisibleText(Region);		
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[8]/input")).clear();
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[8]/input")).sendKeys(City);
 		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/li[9]/input")).clear();
@@ -48,7 +48,7 @@ public class Add_ContactPage {
 	//Clicks the "Add Contact" button from the Add Details Form page
 	public Home_ContactPage ClickAddContactButtonOnAddContactPage()
 	{
-		_driver.findElement(By.xpath(".//*[@id='main']/form/ul/input")).click();
+		_driver.findElement(By.xpath(".//*[@id='main']/form/input")).click();
 		return new Home_ContactPage(_driver);
 	}
 	

@@ -8,9 +8,12 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import bsh.Console;
+
 public class Home_ContactPage {
 	
 	public WebDriver _driver;
+	
 	
 	public Home_ContactPage(WebDriver _browser)
 	{
@@ -30,20 +33,60 @@ public class Home_ContactPage {
 		return new View_ContactPage(_driver);
 	}
 	
+	//Clicks View link for the last row of contacts table		
+	public Update_ContactPage ClickUpdateLinkOnHomePage()
+	{		
+		List<WebElement> allRows = _driver.findElements(By.xpath(".//*[@id='ContactsTable']/tbody/tr"));		
+		_driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.size()+"]/td[5]/a")).click();
+		return new Update_ContactPage(_driver);
+	}
+	
 	//Clicks Delete link for the last row of contacts table
 	public boolean ClickDeleteLinkOnHomePage()
 	{
 		List<WebElement> allRows = _driver.findElements(By.xpath(".//*[@id='ContactsTable']/tbody/tr"));	
 		String FirstNameOfDeletedContact = _driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.size()+"]/td[3]")).getText();
-		_driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.size()+"]/td[5]/a")).click();
+		String LinkText = _driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.size()+"]/td[6]/a")).getText();
+		System.out.println("Link is:" +LinkText);
+				
+		if (LinkText.matches("Delete"))
+		{
+			_driver.findElement(By.xpath(".//*[@id='ContactsTable']/tbody/tr["+allRows.size()+"]/td[6]/a")).click();			
+			ClickOkOnDeleteConfirmation();				
+		}
+		 
+		//WebDriverWait wait = new WebDriverWait(_driver,5);			
 		List<WebElement> allFirstNames = _driver.findElements(By.xpath(".//*[@id='ContactsTable']/tbody/tr/td[3]"));
 		for (WebElement name : allFirstNames)
-		{
+		{			
 			String checkName = name.getText();
 			if (checkName.equals(FirstNameOfDeletedContact))
 				return false;
 		}
 		return true;
+		
+	}
+	
+	//Clicks Ok on the Confirmation PopUp when Delete link is clicked
+	public void ClickOkOnDeleteConfirmation()
+	{
+		WebDriverWait wait = new WebDriverWait(_driver,5);
+		wait.until(ExpectedConditions.alertIsPresent());
+					
+		Alert popUpConfirmation = _driver.switchTo().alert();
+		popUpConfirmation.accept();	
+		_driver.switchTo().defaultContent();		
+	}
+	
+	//Clicks Cancel on the Confirmation PopUp when Delete link is clicked
+	public void ClickCancelOnDeleteConfirmation()
+	{
+		WebDriverWait wait = new WebDriverWait(_driver,5);
+		wait.until(ExpectedConditions.alertIsPresent());
+					
+		Alert popUpConfirmation = _driver.switchTo().alert();
+		popUpConfirmation.dismiss();	
+		_driver.switchTo().defaultContent();		
 	}
 	
 	//Clicks the Add a Contact Link on the Home page

@@ -5,8 +5,8 @@ import java.util.Random;
 
 import org.junit.*;
 import org.openqa.selenium.*;
-//import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.Add_ContactPage;
 import pageObjects.Home_ContactPage;
 import pageObjects.View_ContactPage;
+import pageObjects.Update_ContactPage;
  
 public class ContactManager {
 	
@@ -27,20 +28,20 @@ public class ContactManager {
 	      ///Uncomment the below three rows when tests are run using Selenium Grid or local WebDriver
 		  //System.setProperty("webdriver.chrome.driver", "lib\\chromedriver.exe");
 		  //System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
-		 // System.setProperty("webdriver.ie.driver", "lib\\IEDriverServer.exe"); 
+		  //System.setProperty("webdriver.ie.driver", "lib\\IEDriverServer.exe"); 
 	     URL sauceLabsURL = new URL("http://ondemand.saucelabs.com/wd/hub");	
-	   ///Uncomment the below row when tests are run using Selenium Grid
+	   ////Uncomment the below row when tests are run using Selenium Grid
 	     //URL seleniumGridURL = new URL("http://localhost:4444/wd/hub");  
 		  
 		  DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-		//(Comment out the below two lines (Sauce labs username and account key) when Selenium Grid is being used)
+		////(Comment out the below two lines (Sauce labs username and account key) when Selenium Grid is being used)
           caps.setCapability("username", "mohanthalla"); // supply sauce labs username
           caps.setCapability("accessKey", "941b320d-a07a-463c-8fc3-f8083e453e91");  // supply sauce labs account key 
           caps.setCapability("platform", "Windows 7");
           caps.setCapability("version", "11.0");	
 		  
-		  //Currently running tests on "SauceLabs", replace the "sauceLabsURL" 
-          //with "seleniumGridURL" if tests need to be run on Selenium Grid
+		  ////Currently running tests on "SauceLabs", replace the "sauceLabsURL" 
+          ////with "seleniumGridURL" if tests need to be run on Selenium Grid
 		  _browser = new RemoteWebDriver(sauceLabsURL, caps);
 		  //_browser = new InternetExplorerDriver();
 		  //_browser = new FirefoxDriver();
@@ -51,8 +52,9 @@ public class ContactManager {
 	}	
 	
  @Test
- //Test is used to create a contact and then view the created contact details and verify the details entered are correct
- public void AddViewTest() throws Exception { 
+ ////Test is used to create a contact and then view the created contact details and verify the details entered are correct
+ ////and also update and check that the details have been updated
+ public void AddViewUpdateTest() throws Exception { 
  
   Home_ContactPage objHome = new Home_ContactPage(_browser);
   
@@ -62,15 +64,15 @@ public class ContactManager {
   String FirstName = "TestFirstName"+randomnumber+"";
   String LastName = "TestLastName"+randomnumber+"";
   String Phone = "041234567";
-  String EmailId = "TestEmail"+randomnumber+"";
+  String EmailId = "TestEmail"+randomnumber+"@test.com";
   String Street1 = "TestStreet1"+randomnumber+"";
   String Street2 = "TestStreet2"+randomnumber+"";
-  String State = "CA";
-  String City = "Los Angeles";
-  String Zip = "23145";
+  String Region = "Wellington";
+  String City = "Wellington";
+  String Zip = "6011";
   
   Add_ContactPage objAdd =  objHome.ClickAddaContactLinkOnHomePage();
- objAdd.EnterFormDetails(FirstName, LastName, Phone, EmailId, Street1, Street2, State, City, Zip);
+ objAdd.EnterFormDetails(FirstName, LastName, Phone, EmailId, Street1, Street2, Region, City, Zip);
  objAdd.ClickAddContactButtonOnAddContactPage();
   
  //Clicks the View link of the last contact in the table
@@ -83,7 +85,7 @@ public class ContactManager {
   String EmailIdOnViewPage = objView.getEmailId();
   String Street1OnViewPage = objView.getStreet1();
   String Street2OnViewPage = objView.getStreet2();
-  String StateOnViewPage = objView.getState();
+  String RegionOnViewPage = objView.getRegion();
   String CityOnViewPage = objView.getCity();
   String ZipOnViewPage = objView.getZip();
   
@@ -94,11 +96,59 @@ public class ContactManager {
   assertEquals("EmailId is correct", EmailId, EmailIdOnViewPage);
   assertEquals("Street1 is correct", Street1, Street1OnViewPage);
   assertEquals("Street2 is correct", Street2, Street2OnViewPage);  
-  assertEquals("State is correct", State, StateOnViewPage);
+  assertEquals("State is correct", Region, RegionOnViewPage);
   assertEquals("City is correct", City, CityOnViewPage);
   assertEquals("Zip is correct", Zip, ZipOnViewPage);
   
-  objView.clickBackToContactLinkOnViewPage(); 
+  objHome = objView.clickBackToContactLinkOnViewPage(); 
+  Update_ContactPage objUpdate= objHome.ClickUpdateLinkOnHomePage();
+  
+  //Generating data to enter in Update Contact Page
+  String UpdateFirstName = "UpdateTestFirstName"+randomnumber+"";
+  String UpdateLastName = "UpdateTestLastName"+randomnumber+"";
+  String UpdatePhone = "047654321";
+  String UpdateEmailId = "UpdateTestEmail"+randomnumber+"@test.com";
+  String UpdateStreet1 = "UpdateTestStreet1"+randomnumber+"";
+  String UpdateStreet2 = "UpdateTestStreet2"+randomnumber+"";
+  String UpdateRegion = "Manawatu-Wanganui";
+  String UpdateCity = "TestCity";
+  String UpdateZip = "4011"; 
+  
+  objUpdate.setFirstNameOnUpdatePage(UpdateFirstName);
+  objUpdate.setLastNameOnUpdatePage(UpdateLastName);
+  objUpdate.setPhoneNumberOnUpdatePage(UpdatePhone);
+  objUpdate.setEmailIdOnUpdatePage(UpdateEmailId);
+  objUpdate.setStreet1OnUpdatePage(UpdateStreet1);
+  objUpdate.setStreet2OnUpdatePage(UpdateStreet2);
+  objUpdate.setRegionOnUpdatePage(UpdateRegion);
+  objUpdate.setCityOnUpdatePage(UpdateCity);
+  objUpdate.setZipOnUpdatePage(UpdateZip);
+  objHome = objUpdate.clickUpdateButtonOnUpdatePage();
+  objView = objHome.ClickViewLinkOnHomePage();
+  
+//Get values from the View page of a Contact after values have been updated
+  String FirstNameOnViewPageAfterUpdate = objView.getFirstName();
+  String LastNameOnViewPageAfterUpdate = objView.getLastName();
+  String PhoneOnViewPageAfterUpdate = objView.getPhoneNumber();
+  String EmailIdOnViewPageAfterUpdate = objView.getEmailId();
+  String Street1OnViewPageAfterUpdate = objView.getStreet1();
+  String Street2OnViewPageAfterUpdate = objView.getStreet2();
+  String RegionOnViewPageAfterUpdate = objView.getRegion();
+  String CityOnViewPageAfterUpdate = objView.getCity();
+  String ZipOnViewPageAfterUpdate = objView.getZip();
+  
+  //Asserting the details on the View page match the details used during Contact addition
+  assertEquals("FirstName is correct on Update page", UpdateFirstName, FirstNameOnViewPageAfterUpdate);
+  assertEquals("LastName is correct on Update page", UpdateLastName, LastNameOnViewPageAfterUpdate);
+  assertEquals("Phonenumber is correct on Update page", UpdatePhone, PhoneOnViewPageAfterUpdate);
+  assertEquals("EmailId is correct on Update page", UpdateEmailId, EmailIdOnViewPageAfterUpdate);
+  assertEquals("Street1 is correc on Update paget", UpdateStreet1, Street1OnViewPageAfterUpdate);
+  assertEquals("Street2 is correct on Update page", UpdateStreet2, Street2OnViewPageAfterUpdate);  
+  assertEquals("Region is correct on Update page", UpdateRegion, RegionOnViewPageAfterUpdate);
+  assertEquals("City is correct on Update page", UpdateCity, CityOnViewPageAfterUpdate);
+  assertEquals("Zip is correct on Update page", UpdateZip, ZipOnViewPageAfterUpdate); 
+  
+  
  }
  
   @Test

@@ -61,10 +61,10 @@ public class View_ContactPage {
 	}
 	
 	//Gets the State details of user from the Contact's View page
-	public String getState()
+	public String getRegion()
 	{
-		String State = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[7]/label[2]")).getText();
-		return State;	
+		String Region = _driver.findElement(By.xpath(".//*[@id='main']/ul/li[7]/label[2]")).getText();
+		return Region;	
 	}
 	
 	//Gets the City details of user from the Contact's View page
@@ -82,8 +82,9 @@ public class View_ContactPage {
 	}
 	
 	//Clicks the "Back to Contacts" link from the Contact's View page
-	public void clickBackToContactLinkOnViewPage()
+	public Home_ContactPage clickBackToContactLinkOnViewPage()
 	{
 		_driver.findElement(By.xpath(".//*[@id='main']/a")).click();
+		return new Home_ContactPage(_driver);
 	}	
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun ContactManager" project="JavaContactManager" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="ContactManager" time="82.143">
+    <testcase name="DeleteTest" classname="ContactManager" time="25.912"/>
+    <testcase name="AddViewUpdateTest" classname="ContactManager" time="56.231"/>
+  </testsuite>
+</testrun>
